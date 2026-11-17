@@ -13,20 +13,14 @@ function App() {
       <div className="counter-card">
         <h2 className="title">Accountant</h2>
         
-        {/* Muda a cor do número conforme seja positivo, negativo ou zero */}
-        <p className={`num ${count > 0 ? 'positive' : count < 0 ? 'negative' : ''}`}>
-          {count}
+        <p className={`num ${count > 0 ? 'positive' : count < 0 ? 'negative' : ''}`}>{count}
         </p>
-
         <div className="buttons">
-          <button onClick={decrease} className="btn btn-minus" aria-label="decrease">
-            -
+          <button onClick={decrease} className="btn btn-minus" aria-label="decrease"> -
           </button>
-          <button onClick={reset} className="btn btn-reset">
-            Reset
+          <button onClick={reset} className="btn btn-reset"> Reset
           </button>
-          <button onClick={increase} className="btn btn-plus" aria-label="increase">
-            +
+          <button onClick={increase} className="btn btn-plus" aria-label="increase"> +
           </button>
         </div>
       </div>
